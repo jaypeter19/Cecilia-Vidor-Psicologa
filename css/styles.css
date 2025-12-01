@@ -1,0 +1,151 @@
+    /* ROOT VARIABLES */
+    :root {
+        --font-primary: 'Poppins', Arial, sans-serif;
+        --bg-dark: #080808;
+        --bg-light: #E3E6DE;
+        --bg-navbar: #1B1B1B;
+        --color-navbar: #9C9C9C;
+        --color-icon: #7b3956;
+    }
+
+    /* GENERAL CSS */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box !important;
+        font-family: var(--font-primary) !important;
+    }
+
+    body {
+        background: var(--bg-light);
+        overflow-x: hidden;
+    }
+
+    /* NAVBAR & HERO SECTION  */
+    header {
+        position: absolute;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar {
+        background-color: var(--bg-navbar);
+        width: 55%;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        padding: 0.5rem 0.2rem;
+    }
+
+    .navbar-brand,
+    .nav-link,
+    .nav-link-icon {
+        font-size: 1rem;
+        color: var(--color-navbar);
+    }
+
+    .navbar-brand {
+        padding: 0;
+    }
+
+    .nav-link-icon i {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    #hero-section {
+        padding: 2rem 1rem;
+        background-color: var(--bg-dark);
+    }
+
+    #hero-section .container {
+        margin-top: 2.5rem;
+    }
+
+    .hero-text h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: white;
+    }
+
+    .hero-text .muted {
+        font-size: 1.2rem;
+        color: var(--color-navbar);
+    }
+
+    .hero-text .btn-success {
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    .btn-success i {
+        padding-right: 5px;
+    }
+
+    .hero-image img {
+        object-fit: cover;
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+    }
+
+
+    #text-primary {
+        color: var(--color-icon);
+    }
+
+    .carousel-div {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .help {
+        flex-direction: row-reverse;
+    }
+
+    /* ABOUT SECTION */
+
+    #about-section .about-photo {
+        background: var(--color-icon);
+        width: 30%;
+        padding: 0.5rem;
+        position: relative;
+    }
+
+    #about-section .about-photo .cecilia-photo{
+        width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+    }
+
+
+    /* CONTACT SECTION */
+
+    #contact-section {
+        background-color: var(--bg-dark);
+        color: var(--bg-light);
+        padding: 1.5rem;
+    }
+
+    #contact-section .contact-text h2 {
+        color: var(--bg-light);
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+
+    #contact-section .contact-text p {
+        color: var(--color-navbar);
+    }
+
+    .contact-form .btn-success {
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+
+    footer {
+        background-color: #7b3956;
+    }

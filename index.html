@@ -12,6 +12,12 @@
     <meta name="linkedin" content="https://www.linkedin.com/in/joaopedrofava">
     <meta name="github" content="https://github.com/jaypeter19">
     <title>Cecília Vidor - Psicóloga</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <!-- Font Awesome Icons -->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Bootstrap Icons -->
@@ -27,14 +33,15 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="/">
-                    Cecília Vidor Psicóloga</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
                     aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarToggler">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav w-100 justify-content-evenly align-items-center">
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="/">Cecília Vidor Psicóloga</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#sobre">Sobre</a>
                         </li>
@@ -60,28 +67,59 @@
     <main>
         <section id="hero-section">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-6">
+                <div class="row align-items-center mt-4">
+                    <div class="col-6 hero-text">
                         <h1>Psicoterapia Comportamental e Terapia Sexual</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi earum molestias cupiditate
+                        <p class="muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi earum
+                            molestias cupiditate
                             praesentium quae debitis sequi ipsa illo impedit iusto! Repellendus suscipit rem a
                             perferendis ut placeat animi quibusdam excepturi.</p>
-                        <a href="#"><i class="bi bi-whatsapp"></i>Agende sua sessão agora</a>
+                        <a href="#" class="btn btn-success"><i class="bi bi-whatsapp"></i>Agende sua sessão agora</a>
                     </div>
-                    <div class="col-6 text-center">
+                    <div class="col-6 text-center hero-image">
                         <img src="assets/imgs/DSCN2012.JPG" alt="Cecília Vidor - Psicóloga" class="img-fluid">
                     </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section id="teraphy-section">
             <div class="container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-8 text-center">
+                <div class="row teraphy mt-4">
+                    <div class="col-lg-8">
+                        <h3>Como funciona a psicoterapia?</h3>
+                    </div>
+                    <div class="col-lg-6">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem accusamus in dolores
+                            totam voluptas quo, eaque assumenda reiciendis similique id alias iure ex consequuntur
+                            delectus sequi sed molestias eum? Nulla?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae soluta quaerat delectus,
+                            optio in, nam nemo distinctio ipsum, numquam error rerum et vitae nisi suscipit culpa quos
+                            sapiente tempore minima.</p>
+                    </div>
+                </div>
+                <div class="row help mt-4">
+                    <div class="col-lg-8 text-end">
+                        <h3>Como posso te ajudar?</h3>
+                    </div>
+                    <div class="col-lg-6 text-end">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem accusamus in dolores
+                            totam voluptas quo, eaque assumenda reiciendis similique id alias iure ex consequuntur
+                            delectus sequi sed molestias eum? Nulla?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex amet expedita harum earum obcaecati deserunt aspernatur
+                            fuga. Exercitationem minima, beatae natus debitis expedita doloribus tempore quidem, reprehenderit dolores nostrum
+                            non.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="benefits-section">
+            <div class="container my-3">
+                <div class="row justify-content-center align-items-center my-4">
+                    <div class="col-6 text-center">
                         <h2>Benefícios da Psicoterapia</h2>
                     </div>
-                    <div class="col-8">
-                        <div id="carouselExample" class="carousel slide">
+                    <div class="col-6 carousel-div">
+                        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div class="col-12 text-center">
@@ -103,7 +141,7 @@
                                             <i class="fas fa-circle fa-stack-2x" id="text-primary"></i>
                                             <i class="fa-solid fa-brain fa-stack-1x fa-inverse"></i>
                                         </span>
-                                        <h4>Saúde</h4>
+                                        <h4>Equilíbrio</h4>
                                         <p class="text-muted">Ao refletir sobre sua história, emoções e padrões de
                                             comportamento, a
                                             pessoa compreende melhor quem é, o que a motiva e o que a limita. A
@@ -120,7 +158,22 @@
                                             <i class="fas fa-circle fa-stack-2x" id="text-primary"></i>
                                             <i class="fa-solid fa-brain fa-stack-1x fa-inverse"></i>
                                         </span>
-                                        <h4>Felicidade</h4>
+                                        <h4>Intimidade</h4>
+                                        <p class="text-muted">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
+                                            nostrum? Commodi temporibus explicabo doloremque obcaecati atque optio,
+                                            libero odio itaque rerum saepe magnam at quasi dicta deleniti recusandae,
+                                            neque officia?
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-12 text-center">
+                                        <span class="fa-stack fa-4x">
+                                            <i class="fas fa-circle fa-stack-2x" id="text-primary"></i>
+                                            <i class="fa-solid fa-brain fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                        <h4>Confiança</h4>
                                         <p class="text-muted">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
                                             nostrum? Commodi temporibus explicabo doloremque obcaecati atque optio,
@@ -145,71 +198,55 @@
                 </div>
             </div>
         </section>
-        <section id="sobre" class="about-section">
+        <section id="about-section">
             <div class="container">
-                <div class="row justify-content-between about-mobile">
+                <div class="row justify-content-between my-4">
                     <div class="col-md-6 col-lg-6">
                         <h3>Sobre mim</h3>
-                        <p>Meu nome é em homenagem à minha bisavó, que também se chamava Stella.</p>
-                        <p>Desde sempre me interessei pelo cuidado e pela área da saúde, sempre buscando
-                            acolher o outro. Sou formada em psicologia pela PUC-RS, e atualmente estou realizando
-                            especialização em Terapia Cognitivo-Comportamental nesta mesma instituição, e faço
-                            formação em Psico-Oncologia no Instituto Catavento. </p>
-                        <p>Atualmente me dedico à psicologia clínica, buscando promover um espaço de
-                            escuta, acolhimento e autoconhecimento aos pacientes. Nas minhas horas vagas gosto
-                            muito de ler, ir ao cinema, jogar Beach Tennis e praticar yoga. Vamos nos conhecer melhor?
-                        </p>
-                        <a href="https://wa.me/5551982682331" target="_blank" class="contato" aria-label="WhatsApp"><i
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, dignissimos officiis
+                            blanditiis voluptatum libero, nihil adipisci facilis necessitatibus fugiat consequatur
+                            repellendus in praesentium! Autem totam repellendus voluptates fugit a! Natus?.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut impedit, velit optio assumenda
+                            itaque asperiores ipsam laborum incidunt accusantium voluptatum ullam, explicabo veniam
+                            necessitatibus sit, quo perferendis earum voluptatibus. Nemo.. </p>
+                        <a href="https://wa.me/5551989184786" target="_blank" class="contato" aria-label="WhatsApp"><i
                                 class="bi bi-whatsapp"></i> Agende sua sessão
                             agora</a>
                     </div>
                     <div class="col-md-6 col-lg-6 about-photo text-center">
-                        <img src="assets/imgs/DSCN2014.JPG" alt="Psicóloga Cecília Vidor Perfil" class="img-fluid">
+                        <img src="assets/imgs/DSCN2014.JPG" alt="Psicóloga Cecília Vidor Perfil" class="cecilia-photo">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="teraphy-section">
-            <div class="container">
-                <div class="row teraphy">
-                    <div class="col-lg-8">
-                        <h3>Como funciona a psicoterapia?</h3>
-                    </div>
-                    <div class="col-lg-8">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem accusamus in dolores
-                            totam voluptas quo, eaque assumenda reiciendis similique id alias iure ex consequuntur
-                            delectus sequi sed molestias eum? Nulla?</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
+        <section id="contact-section">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-10 text-center">
+                    <div class="col-8 text-center contact-text">
                         <h2>Contato</h2>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam explicabo porro adipisci
                             animi, inventore pariatur impedit dolorum vel consectetur quisquam corporis nostrum sequi
                             fuga necessitatibus iusto? Dolorum eos temporibus amet!</p>
                     </div>
-                    <div class="col-8">
-                        <form>
+                    <div class="col-8 contact-form">
+                        <form class="needs-validation" method="POST" novalidate>
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp">
-                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
-                                </div>
+                                <label for="nome" class="form-label">Nome*</label>
+                                <input type="text" class="form-control" id="nome" name="name">
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                <label for="email" class="form-label">Email*</label>
+                                <input type="email" class="form-control" id="email" name="email">
                             </div>
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label">Telefone*</label>
+                                <input type="tel" class="form-control" id="telefone" name="phone">
                             </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <div class="mb-3">
+                                <label for="info" class="form-label">Informações Adicionais</label>
+                                <textarea class="form-control" name="info" id="info"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success">Enviar</button>
                         </form>
                     </div>
                 </div>
@@ -217,7 +254,25 @@
         </section>
     </main>
     <footer>
-
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 text-center">
+                    Pop-up Google Maps com Endereço
+                </div>
+                <div class="col-md-6">
+                    <ul>
+                        <li><a href="#">Endereço</a></li>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row copyright">
+                <div class="col-12 text-center">
+                    <p>Cecília Vidor © 2025</p>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
