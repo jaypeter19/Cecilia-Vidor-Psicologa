@@ -18,8 +18,12 @@
     }
 
     body {
-        background: var(--bg-light);
+        background: var(--light-primary);
         overflow-x: hidden;
+    }
+
+    #text-primary {
+        color: var(--red-primary);
     }
 
     /* NAVBAR & HERO SECTION  */
@@ -37,7 +41,7 @@
         width: 55%;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
-        padding: 15px 8rem;
+        padding: 15px 1rem;
     }
 
     .navbar-brand,
@@ -86,6 +90,36 @@
         height: 30rem;
         border-radius: 50%;
     }
+
+    /* SERVICES SECTION */
+
+    .service-section h3 {
+        font-size: 2rem;
+        font-weight: 800;
+        color: var(--dark-secondary);
+    }
+
+    .service-section h4 {
+        margin: 15px 0px;
+        font-size: 1.5rem;
+        color: var(--red-primary);
+    }
+
+
+    /* THERAPY SECTION */
+
+    .teraphy-section {
+        margin-top: 5rem;
+    }
+
+    .teraphy-section h3 {
+        font-size: 2rem;
+        font-weight: 800;
+        color: var(--dark-secondary);
+    }
+
+
+    
 
     /* ABOUT SECTION */
 
