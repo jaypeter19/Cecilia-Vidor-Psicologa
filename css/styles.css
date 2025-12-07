@@ -4,6 +4,7 @@
         --dark-primary: #090909;
         --dark-secondary: #1B1B1B;
         --light-primary: #FFFBFD;
+        --light-secondary: #F8F9FC;
         --navbar-primary: #9C9C9C;
         --red-primary: #7b3956;
     }
@@ -18,7 +19,7 @@
     }
 
     body {
-        background: var(--light-primary);
+        background: var(--light-secondary);
         overflow-x: hidden;
     }
 
@@ -106,7 +107,7 @@
     }
 
 
-    /* THERAPY SECTION */
+    /* TERAPHY SECTION */
 
     .teraphy-section {
         margin-top: 5rem;
@@ -118,53 +119,105 @@
         color: var(--dark-secondary);
     }
 
+    /* FAQ SECTION */
 
-    
+    .faq-section {
+        margin-top: 5rem;
+        padding: 30px;
+        background-color: var(--dark-primary);
+        color: var(--light-primary);
+    }
+
+    .faq-section h3 {
+        font-size: 2rem;
+        font-weight: 800;
+        text-align: left;
+    }
 
     /* ABOUT SECTION */
 
-    #about-section .about-photo {
-        background: var(--color-icon);
+    .about-section {
+        margin-top: 5rem;
+    }
+
+    .about-section h3 {
+        font-size: 2rem;
+        font-weight: 800;
+        color: var(--dark-secondary);
+    }
+
+    .about-section .about-photo {
+        background: var(--red-primary);
         width: 30%;
         padding: 0.5rem;
         position: relative;
     }
 
-    #about-section .about-photo .cecilia-photo {
+    .about-section .about-photo .cecilia-photo {
         width: 100%;
         min-height: 100%;
         object-fit: cover;
     }
 
+    /* BENEFITS SECTION */
+
+    .benefits-section {
+        padding: 30px;
+        background-color: var(--dark-primary);
+        color: var(--light-primary);
+    }
+
+    .benefits-section h3 {
+        font-size: 2rem;
+        font-weight: 800;
+        text-align: left;
+    }
+
+    .benefits-section h4 {
+        margin: 15px 0px;
+        font-size: 1.5rem;
+        color: var(--red-primary);
+    }
+
+    #carouselExample {
+        border: 1px solid var(--red-primary);
+        padding: 25px 15px;
+        border-radius: 15px;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+
 
     /* CONTACT SECTION */
 
     #contact-section {
-        background-color: var(--bg-dark);
-        color: var(--bg-light);
+        background-color: var(--dark-primary);
+        color: var(--light-primary);
         padding: 1.5rem;
     }
 
     #contact-section .contact-text h2 {
-        color: var(--bg-light);
-        font-weight: 700;
+        color: var(--light-primary);
+        font-weight: 800;
         font-size: 2.5rem;
     }
 
     #contact-section .contact-text p {
-        color: var(--color-navbar);
+        color: var(--red-primary);
     }
 
     .contact-form .btn-success {
         width: 100%;
         font-size: 1rem;
-        font-weight: 600;
+        font-weight: 800;
         letter-spacing: 0.5px;
         text-transform: uppercase;
+        padding: 0.8rem;
     }
 
     footer {
-        background-color: #7b3956;
+        background-color: var(--light-secondary);
     }
 
 
