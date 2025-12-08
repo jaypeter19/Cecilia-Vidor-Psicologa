@@ -5,8 +5,8 @@
         --dark-secondary: #1B1B1B;
         --light-primary: #FFFBFD;
         --light-secondary: #F8F9FC;
-        --navbar-primary: #9C9C9C;
         --red-primary: #7b3956;
+        --navbar-primary: #9C9C9C;
         --border-radius: 15px;
         --font-weight-primary: 800;
     }
@@ -77,8 +77,14 @@
         align-items: center;
     }
 
-    .hero-text h1 {
+    .hero-text h1{
         font-size: 2.5rem;
+        font-weight: var(--font-weight-primary);
+        color: var(--red-primary);
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
         font-weight: var(--font-weight-primary);
         color: var(--red-primary);
     }
@@ -344,6 +350,9 @@
         .hero-text h1 {
             font-size: 1.2rem;
         }
+         .hero-text h2 {
+            font-size: 1.2rem;
+        }
 
         .hero-text .muted {
             font-size: 1rem;
@@ -397,8 +406,8 @@
             width: 80%;
         }
 
-         .hero-section {
-            min-height: 70vh;
+        .hero-section {
+            min-height: 85vh;
         }
 
         .faq-section h3 {
@@ -409,7 +418,7 @@
             font-size: 1.5rem;
         }
 
-         .hero-image img {
+        .hero-image img {
             margin-top: 2rem;
         }
     }
