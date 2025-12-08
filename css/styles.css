@@ -7,6 +7,8 @@
         --light-secondary: #F8F9FC;
         --navbar-primary: #9C9C9C;
         --red-primary: #7b3956;
+        --border-radius: 15px;
+        --font-weight-primary: 800;
     }
 
     /* GENERAL CSS */
@@ -35,22 +37,28 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 5;
     }
 
     .navbar {
         background-color: var(--dark-secondary);
         width: 55%;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: var(--border-radius);
+        border-bottom-right-radius: var(--border-radius);
         padding: 15px 1rem;
+    }
+
+    .navbar-brand img {
+        width: 150px;
+        height: auto;
     }
 
     .navbar-brand,
     .nav-link,
     .nav-link-icon {
         font-size: 1rem;
-        font-weight: 600;
-        color: var(--navbar-primary);
+        font-weight: var(--font-weight-primary);
+        color: var(--light-primary);
     }
 
     .nav-link-icon i {
@@ -58,16 +66,17 @@
         padding: 0.5rem;
     }
 
-    #hero-section {
+    .hero-section {
         background-color: var(--dark-primary);
         min-height: 80vh;
         display: flex;
+        justify-content: center;
         align-items: center;
     }
 
     .hero-text h1 {
-        font-size: 2.2rem;
-        font-weight: 600;
+        font-size: 2.5rem;
+        font-weight: var(--font-weight-primary);
         color: var(--red-primary);
     }
 
@@ -79,6 +88,7 @@
     .hero-text .btn-success {
         padding: 15px;
         font-size: 1.3rem;
+        border-radius: var(--border-radius);
     }
 
     .btn-success i {
@@ -96,54 +106,102 @@
 
     .service-section h3 {
         font-size: 2rem;
-        font-weight: 800;
+        font-weight: var(--font-weight-primary);
         color: var(--dark-secondary);
     }
 
     .service-section h4 {
         margin: 15px 0px;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         color: var(--red-primary);
     }
 
 
-    /* TERAPHY SECTION */
+    /* therapy SECTION */
 
-    .teraphy-section {
-        margin-top: 5rem;
+    .therapy-section {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
     }
 
-    .teraphy-section h3 {
+    .therapy-section h3 {
         font-size: 2rem;
-        font-weight: 800;
+        font-weight: var(--font-weight-primary);
         color: var(--dark-secondary);
     }
 
     /* FAQ SECTION */
 
     .faq-section {
-        margin-top: 5rem;
-        padding: 30px;
         background-color: var(--dark-primary);
         color: var(--light-primary);
+        position: relative;
+    }
+
+
+    .faq-section::before {
+        content: '';
+        width: 100%;
+        height: 1100px;
+        background-color: var(--dark-primary);
+        position: absolute;
+        top: -32px;
+        left: 0;
+        z-index: -1;
+        transform: skewY(-10deg);
+    }
+
+    .faq-section::after {
+        content: '';
+        width: 100%;
+        height: 50%;
+        background-color: var(--light-secondary);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
     }
 
     .faq-section h3 {
         font-size: 2rem;
-        font-weight: 800;
+        font-weight: var(--font-weight-primary);
         text-align: left;
+    }
+
+    .accordion-item {
+        border: 0 !important;
+        margin-bottom: 5px;
+    }
+
+    .accordion-item,
+    .accordion-button {
+        border-top-right-radius: 25px !important;
+        border-top-left-radius: 25px !important;
+        border-bottom-right-radius: 25px !important;
+        border-bottom-left-radius: 25px !important;
+    }
+
+    .accordion-button {
+        background-color: var(--red-primary);
+        color: var(--light-primary);
+        font-weight: 700;
     }
 
     /* ABOUT SECTION */
 
     .about-section {
-        margin-top: 5rem;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
     }
 
     .about-section h3 {
         font-size: 2rem;
-        font-weight: 800;
-        color: var(--dark-secondary);
+        font-weight: var(--font-weight-primary);
+        color: var(--light-primary);
+    }
+
+    .about-section p {
+        color: var(--light-primary);
     }
 
     .about-section .about-photo {
@@ -188,22 +246,22 @@
     }
 
 
-
     /* CONTACT SECTION */
 
-    #contact-section {
+    .contact-section {
         background-color: var(--dark-primary);
         color: var(--light-primary);
-        padding: 1.5rem;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
     }
 
-    #contact-section .contact-text h2 {
+    .contact-section .contact-text h2 {
         color: var(--light-primary);
         font-weight: 800;
         font-size: 2.5rem;
     }
 
-    #contact-section .contact-text p {
+    .contact-section .contact-text p {
         color: var(--red-primary);
     }
 
@@ -219,7 +277,6 @@
     footer {
         background-color: var(--light-secondary);
     }
-
 
 
     @media only screen and (max-width: 576px) {}

@@ -8,9 +8,10 @@
     <meta name="description" content="Site de apresentação da psicóloga Cecília Vidor."/>
     <meta property="og:title" content="Cecília Vidor - Psicóloga">
     <meta property="og:description" content="Site de apresentação da psicóloga Cecília Vidor.">
-    <meta name="author" content="João Pedro Telles Fava" />
+    <meta name="author" content="João Pedro Telles Fava"/>
     <meta name="linkedin" content="https://www.linkedin.com/in/joaopedrofava">
     <meta name="github" content="https://github.com/jaypeter19">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/icons/favicon.ico"/>
     <title>Cecília Vidor | Psicóloga</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,6 +34,9 @@
     <header>
         <nav class="navbar navbar-expand-md">
             <div class="container">
+                <a class="navbar-brand d-none" href="/">
+                    <img src="assets/imgs/Logo-Cecilia-Vidor.png" alt="Cecília Vidor | Psicóloga" class="logo">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCecilia"
                     aria-controls="navbarCecilia" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -40,7 +44,9 @@
                 <div class="collapse navbar-collapse" id="navbarCecilia">
                     <ul class="navbar-nav w-100 justify-content-evenly align-items-center">
                         <li class="nav-item">
-                            <a class="navbar-brand" href="/">Cecília Vidor Psicóloga</a>
+                            <a class="navbar-brand" href="/">
+                                <img src="assets/imgs/Logo-Cecilia-Vidor.png" alt="Cecília Vidor | Psicóloga" class="logo">
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#servicos">Atuação</a>
@@ -68,7 +74,7 @@
         </nav>
     </header>
     <main>
-        <section id="hero-section">
+        <section id="hero" class="hero-section">
             <div class="container">
                 <div class="row align-items-center mt-4">
                     <div class="col-6 hero-text">
@@ -82,7 +88,7 @@
                 </div>
             </div>
         </section>
-        <section id="service" class="service-section">
+        <section id="servicos" class="service-section">
             <div class="container my-4">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-12 text-center my-3">
@@ -107,14 +113,13 @@
                         </span>
                         <h4>Sexologia Clínica</h4>
                         <p class="text-muted my-2">
-                            Atendimento psicoterapico em Porto Alegre.
+                            Consultoria sexual em Porto Alegre.
                         </p>
                     </div>
                     <div class="col-md-4 col-lg-3">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x" id="text-primary"></i>
                             <i class="fa-solid fa-mars-and-venus fa-stack-1x fa-inverse"></i>
-
                         </span>
                         <h4>Terapia Sexual</h4>
                         <p class="text-muted my-2">Terapia sexual para casais.
@@ -123,7 +128,7 @@
                 </div>
             </div>
         </section>
-        <section id="teraphy-section" class="teraphy-section">
+        <section id="terapia" class="therapy-section">
             <div class="container">
                 <div class="row justify-content-start mt-4">
                     <div class="col-lg-8 text-start">
@@ -165,81 +170,88 @@
                         <h3>Perguntas Frequentes</h3>
                     </div>
                     <div class="col-md-6">
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion accordion-flush" id="accordionFAQ">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                        aria-controls="flush-collapseOne">
+                                        data-bs-target="#FAQ_1" aria-expanded="false" aria-controls="FAQ_1">
                                         Como funcionam os atendimentos?
                                     </button>
                                 </h2>
-                                <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">Placeholder content for this accordion, which is
-                                        intended to
-                                        demonstrate the <code>.accordion-flush</code> class. This is the first item’s
-                                        accordion
-                                        body.</div>
+                                <div id="FAQ_1" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Tanto para psicoterapia quanto para consultoria, os primeiros atendimentos
+                                            são
+                                            reservados para avaliação e mapeamento de objetivos. Você será avaliado em
+                                            termos de estilo de vida, hábitos de sono, alimentação, rotina e outros
+                                            fatores
+                                            para que possamos entender o que está afetando sua saúde mental.
+                                        </p>
+                                        <p>
+                                            Em seguida, se inicia o tratamento com reavaliações periódicas e ajustes.
+                                            Por fim, se finaliza
+                                            o processo psicoterapêutico com a alta.
+                                        </p>
+
+                                    </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                        aria-controls="flush-collapseTwo">
+                                        data-bs-target="#FAQ_2" aria-expanded="false" aria-controls="FAQ_2">
                                         Quanto tempo dura uma sessão?
                                     </button>
                                 </h2>
-                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">Placeholder content for this accordion, which is
-                                        intended to
-                                        demonstrate the <code>.accordion-flush</code> class. This is the second item’s
-                                        accordion
-                                        body. Let’s imagine this being filled with some actual content.</div>
+                                <div id="FAQ_2" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        <p>As sessões duram em torno de 50 minutos, tanto da psicoterapia quanto da
+                                            consultoria em sexologia.</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                        aria-controls="flush-collapseThree">
-                                       Aceita plano de saúde?
+                                        data-bs-target="#FAQ_3" aria-expanded="false" aria-controls="FAQ_3">
+                                        Quanto tempo dura o tratamento?
                                     </button>
                                 </h2>
-                                <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">Placeholder content for this accordion, which is
-                                        intended to
-                                        demonstrate the <code>.accordion-flush</code> class. This is the third item’s
-                                        accordion
-                                        body. Nothing more exciting happening here in terms of content, but just filling
-                                        up the
-                                        space to make it look, at least at first glance, a bit more representative of
-                                        how this would
-                                        look in a real-world application.</div>
+                                <div id="FAQ_3" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        <p>A duração do tratamento varia de acordo com a sua demanda e o seu próprio
+                                            processo psicoterapêutico. É importante ter paciência e cuidado com as suas
+                                            necessidades.</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                        aria-controls="flush-collapseThree">
-                                       Como se preparar para a terapia online?
+                                        data-bs-target="#FAQ_4" aria-expanded="false" aria-controls="FAQ_4">
+                                        Aceita plano de saúde?
                                     </button>
                                 </h2>
-                                <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">Placeholder content for this accordion, which is
-                                        intended to
-                                        demonstrate the <code>.accordion-flush</code> class. This is the third item’s
-                                        accordion
-                                        body. Nothing more exciting happening here in terms of content, but just filling
-                                        up the
-                                        space to make it look, at least at first glance, a bit more representative of
-                                        how this would
-                                        look in a real-world application.</div>
+                                <div id="FAQ_4" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        <p>Não realizamos atendimentos por plano de saúde no momento, somente
+                                            particular. Mas emitimos nota fiscal para reembolso do plano. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#FAQ_5" aria-expanded="false" aria-controls="FAQ_5">
+                                        Como se preparar para a terapia online?
+                                    </button>
+                                </h2>
+                                <div id="FAQ_5" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        <p>Este é o seu espaço seguro e pessoal. Sugerimos que você se encontre em um
+                                            ambiente sem outras pessoas e sem distração ou interferências.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -317,8 +329,8 @@
                             Psiquiatria Especial do Hospital de Clínicas de Porto Alegre e especializanda em Sexologia
                             Clínica pelo CEFI. Atua sob a abordagem de psicoterapia comportamental contextual e possui
                             ampla experiência em atendimentos de pessoas com interesses sexuais dissidentes.</p>
-                        <a href="https://wa.me/5551989184786" target="_blank" class="contato btn btn-success" aria-label="WhatsApp"><i
-                                class="bi bi-whatsapp"></i> Agende sua sessão
+                        <a href="https://wa.me/5551989184786" target="_blank" class="contato btn btn-success"
+                            aria-label="WhatsApp"><i class="bi bi-whatsapp"></i> Agende sua sessão
                             agora</a>
                     </div>
                     <div class="col-md-6 col-lg-6 about-photo text-center">
@@ -327,7 +339,7 @@
                 </div>
             </div>
         </section>
-        <section id="contact-section">
+        <section id="contato" class="contact-section">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-8 text-center contact-text">
