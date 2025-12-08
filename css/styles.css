@@ -375,9 +375,9 @@
             font-size: 1rem;
         }
 
-        .about-section{
-            padding-top: 5rem;
-            padding-bottom: 5rem;
+        .about-section {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
         }
 
         .about-section h3 {
@@ -389,5 +389,27 @@
             width: 80%;
         }
 
+    }
 
+    @media only screen and (max-width: 576px) {
+
+        .navbar {
+            width: 80%;
+        }
+
+         .hero-section {
+            min-height: 70vh;
+        }
+
+        .faq-section h3 {
+            font-size: 1.5rem;
+        }
+
+        .benefits-section h3 {
+            font-size: 1.5rem;
+        }
+
+         .hero-image img {
+            margin-top: 2rem;
+        }
     }
