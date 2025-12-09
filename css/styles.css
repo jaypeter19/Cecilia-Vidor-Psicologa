@@ -115,8 +115,8 @@
         width: 100%;
     }
 
-    
-    .navbar .nav-link:hover{
+
+    .navbar .nav-link:hover {
         color: var(--light-primary);
     }
 
@@ -433,6 +433,15 @@
         }
     }
 
+    @media only screen and (max-width: 992px) {
+        .faq-section h3 {
+            font-size: 1.5rem;
+        }
+        .benefits-section h3 {
+            font-size: 1.5rem;
+        }
+    }
+
 
     @media only screen and (max-width: 768px) {
         .navbar {
@@ -508,6 +517,7 @@
 
         .about-section .about-photo {
             width: 40%;
+            margin-top: 1rem;
         }
 
     }
