@@ -343,10 +343,30 @@
         .navbar {
             width: 80%;
         }
+
+        .hero-section {
+            min-height: 50vh;
+        }
+
+        .hero-image img {
+            width: 300px;
+            height: 300px;
+        }
+        .hero-text h1 {
+            font-size: 1.8rem;
+        }
+
+        .about-section {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
     }
 
 
     @media only screen and (max-width: 768px) {
+        .navbar {
+            width: 85%;
+        }
 
         .hero-section {
             min-height: 50vh;
@@ -361,11 +381,11 @@
         }
 
         .hero-text h1 {
-            font-size: 1.2rem;
+            font-size: 1.8rem;
         }
 
         .hero-text h2 {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
         }
 
         .hero-text .muted {
@@ -391,11 +411,19 @@
         }
 
         .therapy-section h3 {
-            font-size: 1.3rem;
+            font-size: 1.5rem;
         }
 
         .therapy-section p {
             font-size: 1rem;
+        }
+
+        .faq-section h3 {
+            font-size: 1.5rem;
+        }
+
+        .benefits-section h3 {
+            font-size: 1.5rem;
         }
 
         .about-section {
@@ -404,12 +432,11 @@
         }
 
         .about-section h3 {
-            font-size: 1.3rem;
+            font-size: 1.5rem;
         }
 
         .about-section .about-photo {
-            margin-top: 2rem;
-            width: 80%;
+            width: 40%;
         }
 
     }
