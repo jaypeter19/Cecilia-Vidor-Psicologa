@@ -487,6 +487,11 @@
             padding-bottom: 5rem;
         }
 
+        .about-section .about-photo {
+            margin-top: 2rem;
+            width: 80%;
+        }
+
 
     }
 
