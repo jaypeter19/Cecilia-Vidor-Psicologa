@@ -74,10 +74,53 @@
         color: var(--light-primary);
     }
 
+    .navbar .nav-link::before {
+        content: "";
+        position: relative;
+        display: block;
+        width: 0px;
+        height: 3px;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgb(227, 230, 222);
+        transition: 0.3s ease-in-out;
+    }
+
+    .navbar .nav-link:hover::before {
+        visibility: visible;
+        width: 100%;
+    }
+
     .nav-link-icon i {
         font-size: 1.5rem;
         padding: 0.5rem;
     }
+
+    .navbar .nav-link-icon::before {
+        content: "";
+        position: relative;
+        display: block;
+        width: 0px;
+        height: 3px;
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgb(227, 230, 222);
+        transition: 0.3s ease-in-out;
+    }
+
+    .navbar .nav-link-icon:hover::before {
+        visibility: visible;
+        width: 100%;
+    }
+
+    
+    .navbar .nav-link:hover{
+        color: var(--light-primary);
+    }
+
+
 
     .navbar .navbar-toggler {
         border-color: var(--red-primary);
@@ -323,13 +366,36 @@
 
     .footer-list .footer-link {
         margin: 15px auto;
+        transition: all ease-in-out;
     }
 
     .footer-list a {
+        position: relative;
         text-decoration: none;
         font-size: 1rem;
         font-weight: var(--font-weight-primary);
         color: var(--red-primary);
+        display: inline-block;
+        transition: font-size 0.25s ease, color 0.25s ease;
+    }
+
+    .footer-list a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 0;
+        height: 2px;
+        background-color: var(--red-primary);
+        transition: width 0.25s ease;
+    }
+
+    .footer-list .footer-link a:hover {
+        font-size: 1.08rem;
+    }
+
+    .footer-list .footer-link a:hover::after {
+        width: 100%;
     }
 
     footer .copyright {
@@ -356,6 +422,7 @@
             width: 300px;
             height: 300px;
         }
+
         .hero-text h1 {
             font-size: 1.8rem;
         }
