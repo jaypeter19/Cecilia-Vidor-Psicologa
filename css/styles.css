@@ -464,6 +464,7 @@
         .navbar {
             width: 100%;
         }
+
         .hero-section {
             min-height: 70vh;
         }
@@ -491,5 +492,13 @@
             margin: 1rem auto;
             width: 180px;
             height: 180px;
+        }
+
+        .benefits-section h4 {
+            font-size: 1.3rem;
+        }
+
+        .faq-section::before {
+            height: 1300px;
         }
     }
