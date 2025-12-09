@@ -12,7 +12,7 @@
     <meta name="linkedin" content="https://www.linkedin.com/in/joaopedrofava">
     <meta name="github" content="https://github.com/jaypeter19">
     <!-- Icon -->
-    <link rel="icon" type="image/png" href="assets/icons/icon-red.png"/>
+    <link rel="icon" type="image/png" href="assets/icons/icon-red.png" />
     <title>Cecília Vidor | Psicóloga</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -174,7 +174,8 @@
                                 especializado para abordar sua
                                 sexualidade</li>
                             <li class="list-group-item px-0">Para quem apresenta disfunções sexuais</li>
-                            <li class="list-group-item px-0">Para quem gostaria de melhorar sua saúde sexual e mental</li>
+                            <li class="list-group-item px-0">Para quem gostaria de melhorar sua saúde sexual e mental
+                            </li>
                         </ul>
                         </p>
                     </div>
@@ -364,27 +365,37 @@
                 <div class="row justify-content-center">
                     <div class="col-md-8 col-lg-8 text-center">
                         <h2>Contato</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam explicabo porro adipisci
-                            animi, inventore pariatur impedit dolorum vel consectetur quisquam corporis nostrum sequi
-                            fuga necessitatibus iusto? Dolorum eos temporibus amet!</p>
+                        <p>Este é um espaço seguro para falar sobre você, sua saúde emocional e sua vida sexual sem
+                            julgamentos.
+                            Se quiser saber mais sobre os atendimentos ou agendar uma sessão, preencha o formulário
+                            abaixo e retornarei o quanto antes.</p>
                     </div>
                     <div class="col-md-10 col-lg-8 contact-form">
-                        <form class="needs-validation" method="POST" novalidate>
+                        <form class="needs-validation" id="contact-form" method="POST" novalidate>
                             <div class="mb-3">
                                 <label for="nome" class="form-label">Nome*</label>
                                 <input type="text" class="form-control" id="nome" name="name" required>
+                                <div class="invalid-feedback">
+                                    Nome obrigatório.
+                                </div>
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email*</label>
                                 <input type="email" class="form-control" id="email" name="email" required>
+                                <div class="invalid-feedback">
+                                    Email obrigatório.
+                                </div>
                             </div>
                             <div class="mb-3">
                                 <label for="telefone" class="form-label">Telefone*</label>
                                 <input type="tel" class="form-control" id="telefone" name="phone" required>
+                                <div class="invalid-feedback">
+                                    Telefone obrigatório.
+                                </div>
                             </div>
                             <div class="mb-3">
-                                <label for="info" class="form-label">Informações Adicionais</label>
-                                <textarea class="form-control" name="info" id="info"></textarea>
+                                <label for="message" class="form-label">Informações Adicionais</label>
+                                <textarea class="form-control" name="message" id="message"></textarea>
                             </div>
                             <button type="submit" class="btn btn-success">Enviar</button>
                         </form>
