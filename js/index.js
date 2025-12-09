@@ -20,7 +20,7 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    emailjs.init("c4hFRHeVWjzZIB0wy");
+    emailjs.init("d7dYzuX-eyVk5ljaD");
 
     const form = document.getElementById('contactForm');
 
