@@ -149,6 +149,10 @@
         color: var(--dark-secondary);
     }
 
+    .list-group-flush .list-group-item {
+        background-color: var(--light-secondary) !important;
+    }
+
     /* FAQ SECTION */
 
     .faq-section {
