@@ -2,7 +2,7 @@
     :root {
         --font-primary: 'Inter', 'Raleway', 'Roboto', Arial, sans-serif;
         --dark-primary: #090909;
-        --dark-secondary: #1B1B1B;
+        --dark-secondary: #121212;
         --light-primary: #FFFBFD;
         --light-secondary: #F8F9FC;
         --red-primary: #7b3956;
@@ -453,4 +453,10 @@
             width: 100%;
         }
 
+    }
+
+    @media only screen and (max-width: 320px) {
+        .hero-text h1 {
+            margin-top: 5rem;
+        }
     }
