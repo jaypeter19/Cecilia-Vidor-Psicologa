@@ -39,6 +39,22 @@
         padding-right: 8px;
     }
 
+    .visually-hidden-focusable {
+        position: absolute;
+        left: -9999px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+
+    .visually-hidden-focusable:focus {
+        position: static;
+        width: auto;
+        height: auto;
+        margin: 1rem;
+    }
+
     /* NAVBAR   */
 
     header {
@@ -131,14 +147,14 @@
 
     /* HERO SECTION */
 
-    .hero-section { 
+    .hero-section {
         min-height: 80vh;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-     .hero-section::before {
+    .hero-section::before {
         content: '';
         width: 100%;
         height: 490px;
@@ -153,7 +169,7 @@
     .hero-section::after {
         content: '';
         width: 100%;
-        height: 20%;
+        height: 25%;
         background-color: var(--dark-primary);
         position: absolute;
         top: 0;
@@ -458,6 +474,7 @@
         .faq-section h3 {
             font-size: 1.5rem;
         }
+
         .benefits-section h3 {
             font-size: 1.5rem;
         }
