@@ -228,6 +228,12 @@
         color: var(--dark-secondary);
     }
 
+    .therapy-section .therapy-photo img {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        object-fit: cover;
+        border-radius: var(--border-radius);
+    }
+
     .list-group-flush .list-group-item {
         background-color: var(--light-secondary) !important;
     }
@@ -470,7 +476,7 @@
             padding-top: 3rem;
             padding-bottom: 3rem;
         }
-            
+
         .faq-section::before {
             height: 1100px;
         }
@@ -485,7 +491,7 @@
         .benefits-section h3 {
             font-size: 1.5rem;
         }
-        
+
     }
 
 
