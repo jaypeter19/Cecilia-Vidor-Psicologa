@@ -364,6 +364,10 @@
         color: var(--red-primary);
     }
 
+    .contact-form .form-control {
+        border-radius: var(--border-radius);
+    }
+
     .contact-form .btn-success {
         width: 100%;
         font-size: 1rem;
