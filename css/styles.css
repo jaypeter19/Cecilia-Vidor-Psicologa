@@ -280,10 +280,10 @@
 
     .accordion-item,
     .accordion-button {
-        border-top-right-radius: 25px !important;
-        border-top-left-radius: 25px !important;
-        border-bottom-right-radius: 25px !important;
-        border-bottom-left-radius: 25px !important;
+        border-top-right-radius: var(--border-radius) !important;
+        border-top-left-radius: var(--border-radius) !important;
+        border-bottom-right-radius: var(--border-radius) !important;
+        border-bottom-left-radius: var(--border-radius) !important;
     }
 
     .accordion-button {
