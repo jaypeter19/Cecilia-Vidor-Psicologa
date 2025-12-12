@@ -4,7 +4,7 @@
         --dark-primary: #090909;
         --dark-secondary: #121212;
         --light-primary: #FFFBFD;
-        --light-secondary: #m;
+        --light-secondary: #F8F9FC;
         --red-primary: #7b3956;
         --navbar-primary: #9C9C9C;
         --border-radius: 15px;
@@ -156,14 +156,9 @@
         background-color: var(--dark-primary);
     }
 
-    .hero-text h1 {
+    .hero-text h1,
+    h2 {
         font-size: 3rem;
-        font-weight: var(--font-weight-primary);
-        color: var(--red-primary);
-    }
-
-    .hero-text h2 {
-        font-size: 2.5rem;
         font-weight: var(--font-weight-primary);
         color: var(--red-primary);
     }
@@ -459,7 +454,11 @@
             height: 300px;
         }
 
-        .hero-text h1 {
+        .hero-text h1,h2 {
+            font-size: 2rem;
+        }
+
+        .hero-text .muted {
             font-size: 1.8rem;
         }
 
@@ -474,6 +473,14 @@
     }
 
     @media only screen and (max-width: 992px) {
+
+        .hero-text h1,h2 {
+            font-size: 1.5rem;
+        }
+
+        .hero-text .muted {
+            font-size: 1rem;
+        }
 
         .faq-section h3 {
             font-size: 1.5rem;
@@ -505,18 +512,6 @@
 
         .navbar-brand-desktop {
             display: none;
-        }
-
-        .hero-text h1 {
-            font-size: 1.8rem;
-        }
-
-        .hero-text h2 {
-            font-size: 1.5rem;
-        }
-
-        .hero-text .muted {
-            font-size: 1rem;
         }
 
         .hero-text .btn-success {
@@ -580,6 +575,7 @@
         }
 
         .hero-text h1 {
+            margin-top: 3rem;
             font-size: 1.5rem;
         }
 
@@ -634,7 +630,6 @@
         }
 
         .hero-text h1 {
-            margin-top: 4rem;
             font-size: 1.5rem;
         }
 
@@ -648,7 +643,6 @@
         }
 
         .hero-text h1 {
-            margin-top: 5.5rem;
             font-size: 1.5rem;
         }
 
