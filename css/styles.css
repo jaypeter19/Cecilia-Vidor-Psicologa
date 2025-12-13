@@ -179,7 +179,7 @@
 
     .service-section {
         position: relative;
-        background-image: url('/assets/imgs/background-2.jpeg');
+        background-image: url('../assets/imgs/background-2.jpeg');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
